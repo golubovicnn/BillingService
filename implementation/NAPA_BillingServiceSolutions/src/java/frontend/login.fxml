@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.LogInScreenController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Private">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" />
+                        <TextField fx:id="firstname" maxWidth="-Infinity" promptText="First Name" />
+                        <TextField fx:id="lastname" layoutX="10.0" layoutY="105.0" maxWidth="-Infinity" promptText="Last Name" />
+                        <Button mnemonicParsing="false" onAction="#clickedSubmit" text="Submit" />
+                        <Button layoutX="278.0" layoutY="244.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Business">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Log In" />
+                        <TextField fx:id="organisationLogIn" maxWidth="-Infinity" promptText="Organisation" />
+                        <Button mnemonicParsing="false" onAction="#clickedSubmitBusiness" text="Submit" />
+                        <Button layoutX="278.0" layoutY="244.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
